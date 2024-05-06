@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></linkrel>
+</head>
+<body>
+  <button class="cart" id="cart">
+    <img class="cart__image" src="https://codelab.pro/wp-content/uploads/2023/02/9ztco4iq.png" alt="Cart" />
+    <div class="cart__num" id="cart_num">0</div>
+  </button>
+    <div id="filters">
+        <div class="developer"><h2>Производитель</h2>
+          <select id="developer">
+            <option value="">-- Все производители --</option>
+            <option value="Logitech">Logitech</option>
+            <option value="Razer">Razer</option>
+            <option value="Bloody">Bloody</option>
+            <option value="Zowie">Zowie</option>   
+          </select>     
+        </div>
+      
+        <div class="connection"><h2>Тип подключения</h2>
+          <div id="connection">
+            <label><input type="checkbox" class="btn" value="wire">Проводной</label><br>
+            <label><input type="checkbox" class="btn" value="wireless">Беспроводной</label><br>
+
+          </div>
+        </div>
+
+        <div class="color"><h2>Цвет</h2>
+            <div id="color">
+              <label><input type="checkbox" class="btn" value="black">Черный</label><br>
+              <label><input type="checkbox" class="btn" value="white">Белый</label><br>
+                <label><input type="checkbox" class="btn" value="pink">Розовый</label><br>
+            </div>
+          </div>
+
+          <div class="form"><h2>Форма</h2>
+            <div id="form">
+              <label><input type="checkbox" class="btn" value="assim">Ассиметричный</label><br>
+              <label><input type="checkbox" class="btn" value="simm">Симметричный</label><br>
+            </div>
+          </div>
+          <div class="face"><h2>Поверхность</h2>
+            <div id="face">
+              <label><input type="checkbox" class="btn" value="glossy">Глянцевый</label><br>
+              <label><input type="checkbox" class="btn" value="mat">Матовый</label><br>
+            </div>
+          </div>
+      
+        <div class="price"><h2>Цена</h2>
+          <div class="price-input">
+             От: <input class="input-text" type="text" value="" id="price-min">&nbsp;&nbsp;
+          </div>
+          <div class="price-input">
+           До: <input class="input-text" type="text" value="" id="price-max">&nbsp;₽&nbsp;
+          </div>
+        </div>
+      </div>
+      
+      <div id="goods"></div>
+      <div class="popup">
+        <div class="popup__container" id="popup_container">
+          <div class="popup__item">
+            <h1 class="popup__title">Оформление заказа</h1>
+          </div>
+          <div class="popup__item" id="popup_product_list">
+            <div class="popup__product">
+              <div class="popup__product-wrap">
+                <img
+                  src="https://avatars.mds.yandex.net/get-mpic/7552302/img_id3942244028165498203.jpeg/optimize"
+                  alt="Razer Orochi V2, Quartz"
+                  class="popup__product-image"
+                />
+                <h2 class="popup__product-title">
+                  Razer Orochi V2, Quartz
+                </h2>
+              </div>
+              <div class="popup__product-wrap">
+                <div class="popup__product-price">135000</div>
+                <button class="popup__product-delete">✖</button>
+              </div>
+            </div>
+          </div>
+          <div class="popup__item">
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого</h2>
+              <output class="popup__cost-value" id="popup_cost">150000</output>
+            </div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Скидка</h2>
+              <output class="popup__cost-value" id="popup_discount">15000</output>
+            </div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого со скидкой</h2>
+              <output class="popup__cost-value" id="popup_cost_discount"
+                >135000</output
+              >
+            </div>
+          </div>
+          <button class="popup__close" id="popup_close">✖</button>
+        </div>
+      </div>
+    <script src ="script.js"></script>
+
+    <form action = "">
+        <input type = "text" name = "search" id = "search" placeholder="Поиск">
+        <button type = "submit" id = "but-search">Найти</button>
+
+    </form>
+
+    <div class="content"></div>
+    <script scr = "script.js"></script>
+
+</body>
+</html>
